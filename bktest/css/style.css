@@ -731,6 +731,6 @@ transform: translateY(0) rotate(45deg);}
 
 .center-circle {display: none;}
 
-.main-back{height: 225px;background:url(../images/logo4.svg) no-repeat center center, linear-gradient(180deg, rgba(42,192,227,1) 0%, rgba(50,70,133,1) 77%);background-size: 150px auto;transition: 0.5s;}
+.main-back{height: 225px;background:url(../images/logo4.svg) no-repeat center center, linear-gradient(180deg, rgba(42,192,227,1) 0%, rgba(50,70,133,1) 77%);transition: 0.5s;}
 .sticky .main-back{background:#fff url(../images/logo4.svg) no-repeat center center;}
 .sticky .contents{transition: 0.4s;top:10px;}
