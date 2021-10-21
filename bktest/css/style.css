@@ -546,11 +546,11 @@ transition: all 0.3s ease-in-out;}
 [data-task-level="4"]{background: #5cd1e5;color: #000 !important;}
 [data-task-level="5"]{background: #6699ff;color: #fff !important;}
 
-.contents{/* height: 100%; *//* background: #fff; */padding: 0 0 1px;position: relative;top: -35px;}
+.contents{/* height: 100%; *//* background: #fff; */padding: 0 0 1px;position: relative;top: 0;}
 .contents h2{width: 100%;font-size: 1.143rem;color: var(--basic-color);font-weight: 500;padding:1.143rem;background: #fff;position: fixed;top: 55px;z-index: 100;transition: 0.2s;opacity: 0;}
 .sticky .contents h2{opacity: 1;}
 .task-card{background: var(--input-text);border-radius: 0.286rem;padding: 1.143rem 1.071rem;position: relative;}
-.task-list{/* height: 100%; */padding: 0 1.143rem;/* overflow-y: auto; */}
+.task-list{/* height: 100%; */padding: 1.143rem 1.143rem;/* overflow-y: auto; */}
 .task-list li{margin-bottom: 1.143rem;position: relative;}
 .card-header{height: 3.071rem;display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;padding-left: 4.071rem;position: relative;margin-top: 0.143rem;}
 .card-header::after{display: block;content: '';width: 3.071rem;height: 3.071rem;background: #fff url(../images/sp_icon.png) no-repeat -14% 13px;background-size: auto 100%;border: 1px solid #ffbcd7;border-radius: 50%;box-sizing: border-box;position: absolute;left: 0;top: 0;}
@@ -737,7 +737,7 @@ transform: translateY(0) rotate(45deg);}
 
 .center-circle {display: none;}
 
-.main-back{height: 225px;background:linear-gradient(180deg, rgba(42,192,227,1) 0%, rgba(50,70,133,1) 77%);transition: 0.5s;position: relative;}
+.main-back{height: 220px;background:linear-gradient(180deg, rgba(42,192,227,1) 0%, rgba(50,70,133,1) 77%);transition: 0.5s;position: relative;}
 .main-back::after{width: 150px;height: 150px;display: block;content: '';background:url(../images/logo4.svg) no-repeat center center;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
 .sticky .main-back{background:#fff url(../images/logo4.svg) no-repeat center center;}
-.sticky .contents{transition: 0.4s;top:10px;}
+.sticky .contents{transition: 0.4s;top:42px;}
