@@ -659,17 +659,25 @@ progress::-webkit-progress-value{
 .dim-wrap.layerPop {display: none;position:absolute;left:0%;top:0;right:0;bottom:0;z-index:101;}
 .dim-wrap.layerPop .popup-wrapper,.dim-wrap.layerPop [class^="alert-wrapper"]{display: none;position:fixed;left: 50%;top: 50%;transform: translate(-50%, -50%);z-index: 500;}
 .dim-wrap.layerPop .popup-wrapper{height: calc(100vh - 40px);display: flex;flex-direction: column;justify-content: center;pointer-events: none;}
+.dim-wrap.layerPop .popup-wrapper.pop-guide{height: 100%;}
+.popup-wrapper.pop-guide > div{height: 100%;border-radius: 0;}
+
 .popup-wrapper{position:relative;margin:0 auto;}
 .popup-wrapper > div{background-color: #fff;border-radius: 8px;pointer-events: all;}
 
 .popup-header{padding-top: 38px;text-align: center;margin-bottom: 20px;position: relative;}
 .popup-header h2{font-size: 1.143rem; color: var(--join-font);font-weight: 700;}
+.pop-guide .popup-header h2{overflow: hidden;text-overflow: ellipsis;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;line-height: 1.5;padding: 0 15px;}
+/* .detail-header{width: 100%;min-height:4rem;box-shadow: 0 0 3px 0 rgb(0 0 0 / 30%);position: relative;display: flex;align-items: center;justify-content: center;padding: 0 2.7rem;z-index: 10;}
+.detail-header .btn-back{position: absolute;left: 0.63rem;top: 1.143rem;} */
+.detail-header h2{color: var(--point-color);font-size: 1.286rem;overflow: hidden;text-overflow: ellipsis;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;line-height: 1.5;}
 .popup-header h2 strong{color: var(--point-font);}
 
 .popup-footer{text-align: center;min-height: 15px;}
 .popup-footer [class^="btn-r"]{width: 5.714rem;margin: 1.143rem 0.188rem;}
 
 .popup-body{padding:0 1.143rem;overflow-y: auto;max-height: calc(100vh - 200px);}
+.pop-guide .popup-body{padding: 0 1.143rem 1.143rem;max-height: calc(100vh - 80px);}
 
 .pop-task{width: 80vw;max-width: 300px;min-width: 270px;}
 .pop-guide{width: 100%;}
@@ -685,6 +693,8 @@ transform: translateY(0) rotate(-45deg);}
 -ms-transform: translateY(0) rotate(45deg);
 -o-transform: translateY(0) rotate(45deg);
 transform: translateY(0) rotate(45deg);}
+.pop-guide .btn-pop-close{width: 50px;height: 50px;}
+.pop-guide .btn-pop-close:after,.pop-guide .btn-pop-close:before{width: 2rem;height: 1px;left: 9px;top: 24px;}
 
 .txt-area{background: var(--input-text);border-radius: 0.143rem;padding: 0.714rem 1.071rem;}
 .txt-area div{width: 100%;display: flex;flex-wrap: wrap;justify-content: space-between;line-height: 1.5;}
