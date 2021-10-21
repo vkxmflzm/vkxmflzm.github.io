@@ -676,8 +676,8 @@ progress::-webkit-progress-value{
 .popup-footer{text-align: center;min-height: 15px;}
 .popup-footer [class^="btn-r"]{width: 5.714rem;margin: 1.143rem 0.188rem;}
 
-.popup-body{padding:0 1.143rem;overflow-y: auto;max-height: calc(100vh - 200px);}
-.pop-guide .popup-body{padding: 0 1.143rem 1.143rem;max-height: calc(100vh - 80px);}
+.popup-body{padding:0 1.143rem;overflow-y: auto;max-height: calc(100% - 200px);}
+.pop-guide .popup-body{padding: 0 1.143rem 1.143rem;max-height: calc(100% - 80px);}
 
 .pop-task{width: 80vw;max-width: 300px;min-width: 270px;}
 .pop-guide{width: 100%;}
