@@ -656,7 +656,7 @@ progress::-webkit-progress-value{
 .popup-footer{text-align: center;min-height: 15px;}
 .popup-footer [class^="btn-r"]{width: 5.714rem;margin: 1.143rem 0.188rem;}
 
-.popup-body{padding:0 1.143rem;overflow-y: auto;/*max-height: calc(100% - 200px);*/}
+.popup-body{padding:0 1.143rem;overflow-y: auto;}
 .pop-guide .popup-body{padding: 0 1.143rem 1.143rem;max-height: calc(100% - 80px);}
 
 .pop-task > div{width: 80vw;max-width: 300px;min-width: 270px;}
@@ -729,27 +729,22 @@ transform: translateY(0) rotate(45deg);}
 
 .main-back{height: 220px;background:linear-gradient(180deg, rgba(42,192,227,1) 0%, rgba(50,70,133,1) 77%);transition: 0.5s;position: relative;}
 .main-back::after{width: 150px;height: 150px;display: block;content: '';background:url(../images/logo4.svg) no-repeat center center;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
-/* .sticky .main-back{background:url(../images/logo4.svg) no-repeat center center;} */
 .sticky .contents{top:42px;}
 
 @keyframes scaleUp { 
   0% { /* 모달 콘텐츠를 하단에 위치시킴 */ 
     transform: scale(.8) translateY(100%); opacity: 0; 
-    -webkit-transform: scale(.8) translateY(100%); opacity: 0; 
   } 
   100% { /* 모달 콘텐츠를 본래 위치로 돌려놓음 */ 
     transform: scale(1) translateY(0); opacity: 1; 
-    -webkit-transform: scale(1) translateY(0); opacity: 1; 
   } 
 }
 @keyframes scaleDown {
   0% { 
     transform: scale(1) translateY(0); opacity: 1; 
-    -webkit-transform: scale(1) translateY(0); opacity: 1; 
   } 
   100% {
     transform: scale(.8) translateY(100%); opacity: 0; 
-    -webkit-transform: scale(.8) translateY(100%); opacity: 0; 
   } 
 }
 @keyframes fadeIn {
@@ -771,15 +766,12 @@ transform: translateY(0) rotate(45deg);}
 @keyframes quickScaleDown {
   0% {
     transform: scale(1);
-    -webkit-transform: scale(1);
   }
   99.9% {
     transform: scale(1);
-    -webkit-transform: scale(1);
   }
   100% {
     transform: scale(0);
-    -webkit-transform: scale(0);
   }
 }
 .dim-wrap.layerPop .popup-wrapper { 
