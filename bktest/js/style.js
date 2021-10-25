@@ -47,8 +47,7 @@ $(function(){
   
   // 상단 메뉴 고정
   var $header = $('.header');
-  var $h2 = $('.task-container');
-  // var $mainBack = $('.main-back');
+  var $h2 = $('.task-container');  
   $(window).scroll(function(){
     var $currentSct = $(this).scrollTop();
     var $offset = 164;
@@ -56,13 +55,9 @@ $(function(){
     if($currentSct > $offset){
         $header.addClass('sticky');
         $h2.addClass('sticky');
-        // $mainBack.addClass('sticky');
     }else{
         $header.removeClass('sticky');
         $h2.removeClass('sticky');
-        // $mainBack.removeClass('sticky');
-    }
-
-    
+    } 
   });
 });
