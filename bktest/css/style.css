@@ -771,7 +771,7 @@ transform: translateY(0) rotate(45deg);}
 .main-back span:nth-child(2)
 {
     top: 50px;
-    left: -0;
+    left: -20px;
     width: 90px;
     height: 90px;
     z-index: 2;
@@ -797,6 +797,7 @@ transform: translateY(0) rotate(45deg);}
     z-index: 2;
     animation: animate2 10s linear infinite;
     animation-delay: calc(-1.5s * var(--i));
+    border-right: 1px solid rgba(255,255,255,0.2);
 }
 .sticky .contents{top:42px;}
 
