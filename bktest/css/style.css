@@ -41,7 +41,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-html,body{height:100%;-webkit-text-size-adjust:none;-webkit-appearance:none;font-size: 14px;overflow-x:hidden;}
+html,body{height:100%;-webkit-text-size-adjust:none;-webkit-appearance:none;font-size: 14px;}
 body {
   font-family:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",Helvetica,sans-serif;
 	line-height: 1;
@@ -367,7 +367,7 @@ transform: translateY(0) rotate(45deg);}
 
 .go-join a{display: inline-block;font-size: 0.929rem;color: var(--basic-color);padding: 1rem; position: relative;}
 .login-form .go-join a:first-child{padding-left: 0;}
-.go-join a::before{display: block;content: '';width: 1px;height: 0.929rem;background: #cdcdcd;position: absolute;right: 0;top: 1rem;}
+.go-join a::before{display: block;content: '';width: 1px;height: 0.929rem;background: #cdcdcd;position: absolute;right: -2px;top: 1rem;}
 .go-join a:last-child::before{display: none;}
 .footer .go-join{display: flex;justify-content: center;}
 
@@ -727,7 +727,7 @@ transform: translateY(0) rotate(45deg);}
 
 .center-circle {display: none;}
 
-.main-back{width: 100%;height: 228px;background:linear-gradient(180deg, rgba(42,192,227,1) 0%, rgba(50,70,133,1) 77%);transition: 0.5s;position: relative;overflow: hidden;}
+.main-back{width: 100%;height: 228px;background:linear-gradient(180deg, rgba(42,192,227,1) 0%, rgba(50,70,133,1) 77%);transition: 0.5s;position: relative;overflow-x:hidden;}
 .main-back::after{width: 150px;height: 150px;display: block;content: '';background:url(../images/logo4.svg) no-repeat center center;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
 .main-back span{position: absolute;
   border-left: 2px solid rgba(255,255,255,0.2);
