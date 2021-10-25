@@ -1,11 +1,13 @@
 $(function(){
   //mainMenu
-	$("#mainMenuOpen").on("click",function(){
+	$("#mainMenuOpen").on("click",function(event){
+    event.preventDefault();
     $("#wrap").addClass("menu-on");
     $('#mainMenu .dim').show();
   });
 
-  $("#mainMenu .pop-close, #mainMenu .dim").on("click",function(){
+  $("#mainMenu .pop-close, #mainMenu .dim").on("click",function(event){
+    event.preventDefault();
     $("#wrap").removeClass("menu-on");
     $('#mainMenu .dim').hide();
   });
