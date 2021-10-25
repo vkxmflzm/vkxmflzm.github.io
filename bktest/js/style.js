@@ -51,7 +51,7 @@ $(function(){
   // var $mainBack = $('.main-back');
   $(window).scroll(function(){
     var $currentSct = $(this).scrollTop();
-    var $offset = 166;
+    var $offset = 164;
 
     if($currentSct > $offset){
         $header.addClass('sticky');

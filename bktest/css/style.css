@@ -678,7 +678,7 @@ transform: translateY(0) rotate(45deg);}
 
 .txt-area{background: var(--input-text);border-radius: 0.143rem;padding: 0.714rem 1.071rem;}
 .txt-area div{width: 100%;display: flex;flex-wrap: wrap;justify-content: space-between;line-height: 1.5;}
-.txt-area div span{display: inline-block;margin-right: auto;}
+.txt-area div span{display: inline-block;margin-right: auto;}2
 .txt-area strong{font-weight: 500;color: var(--point-color);}
 .txt{margin-top: 1.143rem;}
 .txt p{font-size: 0.857rem;line-height: 1.5;}
@@ -727,8 +727,77 @@ transform: translateY(0) rotate(45deg);}
 
 .center-circle {display: none;}
 
-.main-back{height: 220px;background:linear-gradient(180deg, rgba(42,192,227,1) 0%, rgba(50,70,133,1) 77%);transition: 0.5s;position: relative;}
+.main-back{height: 228px;background:linear-gradient(180deg, rgba(42,192,227,1) 0%, rgba(50,70,133,1) 77%);transition: 0.5s;position: relative;}
 .main-back::after{width: 150px;height: 150px;display: block;content: '';background:url(../images/logo4.svg) no-repeat center center;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+.main-back span{position: absolute;
+  /* backdrop-filter: blur(5px); */
+  /* box-shadow: 0 25px 45px rgba(0,0,0,0.1); */
+  /* border: 1px solid rgba(255,255,255,0.5); */
+  border-left: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  /* background: rgba(255,255,255,0.1); */
+  border-radius: 50%;
+  animation: animate 10s linear infinite;
+  animation-delay: calc(-1s * var(--i));}
+  @keyframes animate
+{
+    0%,100%
+    {
+        transform: translateY(-20px);
+    }
+    50%
+    {
+        transform: translateY(20px);
+    }
+}
+@keyframes animate2
+{
+    0%,100%
+    {
+        transform: translateY(10px);
+    }
+    50%
+    {
+        transform: translateY(-10px);
+    }
+}
+.main-back span:nth-child(1)
+{
+    top: -10px;
+    right: -30px;
+    width: 100px;
+    height: 100px;
+}
+.main-back span:nth-child(2)
+{
+    top: 50px;
+    left: -0;
+    width: 90px;
+    height: 90px;
+    z-index: 2;
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
+.main-back span:nth-child(3)
+{
+    bottom: 50px;
+    right: -0;
+    width: 110px;
+    height: 110px;
+    z-index: 2;
+    animation: animate2 10s linear infinite;
+    animation-delay: calc(-1.5s * var(--i));
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+.main-back span:nth-child(4)
+{
+    top: -10px;
+    left: 70px;
+    width: 70px;
+    height: 70px;
+    z-index: 2;
+    animation: animate2 10s linear infinite;
+    animation-delay: calc(-1.5s * var(--i));
+}
 .sticky .contents{top:42px;}
 
 @keyframes scaleUp { 
