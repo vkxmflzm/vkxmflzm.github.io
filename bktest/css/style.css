@@ -362,8 +362,8 @@ transform: translateY(0) rotate(45deg);}
 .login-wrapper .footer{margin-top: auto;}
 
 .login-layout{width: 100%;}
-.login-layout .openput-bar{margin-bottom: 12px;}
-.login-layout .openput-bar.icon-pw{margin-bottom: 0;}
+.login-layout .input-bar{margin-bottom: 12px;}
+.login-layout .input-bar.icon-pw{margin-bottom: 0;}
 
 .go-join a{display: inline-block;font-size: 0.929rem;color: var(--basic-color);padding: 1rem; position: relative;}
 .login-form .go-join a:first-child{padding-left: 0;}
@@ -529,7 +529,7 @@ transition: all 0.3s ease-in-out;}
 .contents h2{width: 100%;font-size: 1.143rem;color: var(--basic-color);font-weight: 500;padding:1.143rem;background: #fff;transition: 0.2s;}
 .sticky .contents h2{position: fixed;top: 55px;z-index: 100;}
 .task-card{background: var(--input-text);border-radius: 0.286rem;padding: 1.143rem 1.071rem;position: relative;}
-.task-list{padding: 1.143rem 1.143rem 0;}
+.task-list{padding: 0 1.143rem;}
 .task-list li{margin-bottom: 1.143rem;position: relative;}
 .card-header{height: 3.071rem;display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;padding-left: 4.071rem;position: relative;margin-top: 0.143rem;}
 .card-header::after{display: block;content: '';width: 3.071rem;height: 3.071rem;background: #fff url(../images/sp_icon.png) no-repeat -14% 13px;background-size: auto 100%;border: 1px solid #ffbcd7;border-radius: 50%;box-sizing: border-box;position: absolute;left: 0;top: 0;}
