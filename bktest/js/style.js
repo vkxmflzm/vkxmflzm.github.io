@@ -11,31 +11,19 @@ $(function(){
   });
 
   // 레이어팝업
-  var layerPop = {
-  	open: function( targetID ){
-  		targetID = $('.'+targetID);
-  		var wrap = targetID.parents('.layerPop');
-
-  		targetID.show();
-  		wrap.show();
-  	},
-  	close: function(){
-  		$('.layerPop').hide();
-    }
-  };
-
   function layerPopEvent() {
   	$("body").on('click', '.open-pop', function(event){
   		event.preventDefault();
   		$("body").addClass('pop-wrapper');
-  		targetID = $(this).attr('data-target');
-  		layerPop.open(targetID);
+  		$targetID = $(this).attr('data-target');
+      $targetID = $('.'+$targetID);
+      $targetID.addClass('layerPop').addClass('open');
   	});
 
   	$('.pop-close,.dim:not(.none)').on('click', function(event){
   		event.preventDefault();
   		$("body").removeClass('pop-wrapper');
-  		layerPop.close();
+      $('.layerPop').removeClass('open');
   	});
   };
   layerPopEvent();
