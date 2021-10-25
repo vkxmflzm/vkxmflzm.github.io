@@ -41,7 +41,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-html,body{height:100%;-webkit-text-size-adjust:none;-webkit-appearance:none;font-size: 14px;}
+html,body{height:100%;-webkit-text-size-adjust:none;-webkit-appearance:none;font-size: 14px;overflow-x:hidden;}
 body {
   font-family:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",Helvetica,sans-serif;
 	line-height: 1;
