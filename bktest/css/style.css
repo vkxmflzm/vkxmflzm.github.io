@@ -637,7 +637,7 @@ progress::-webkit-progress-value{
 .dim {position:fixed;left:0;top:0;width:100vw;height:100vh;background:#000;z-index: 100; opacity: 0.3;}
 
 .dim-wrap{position: fixed;left: 0;top: 0;display: table;height: 100%;width: 100%;z-index: 100;transform: scale(0);}
-.dim-wrap.layerPop{transform: scale(1);}
+.dim-wrap.layerPop,#infoPopup{transform: scale(1);}
 .dim-wrap .popup-wrapper{z-index: 500;}
 .dim-wrap .popup-wrapper,.dim-wrap [class^="alert-wrapper"]{display: none;position:fixed;left: 50%;top: 50%;transform: translate(-50%, -50%);z-index: 500;}
 .dim-wrap .popup-wrapper{width: 100%;height: calc(100vh - 40px);display: flex;flex-direction: column;justify-content: center;align-items: center;pointer-events: none;}
@@ -661,6 +661,11 @@ progress::-webkit-progress-value{
 
 .pop-task > div{width: 80vw;max-width: 300px;min-width: 270px;}
 .pop-guide{width: 100%;}
+
+#infoPopup .popup-wrapper > div{margin: 0 10px;}
+#infoPopup .popup-body{min-width: 250px;padding: 30px 20px;box-sizing: border-box;}
+#infoPopup .popup-body p{color: var(--alert-msg);line-height: 1.3;text-align: center;}
+
 
 .btn-pop-close{width: 2.857rem;height: 2.857rem;text-indent: -9999px;position: absolute;right: 0;top: 0;}
 .btn-pop-close:after,.btn-pop-close:before{display: inline-block;content: '';width: 1.5rem;height: 1px;border-radius: 1px;background-color:#a5a4a6;position: absolute;left: 0.643rem;top: 1.429rem;
