@@ -664,7 +664,7 @@ progress::-webkit-progress-value{
 
 #infoPopup .popup-wrapper > div{margin: 0 10px;}
 #infoPopup .popup-body{min-width: 250px;padding: 30px 20px;box-sizing: border-box;}
-#infoPopup .popup-body p{color: var(--alert-msg);line-height: 1.3;text-align: center;}
+#infoPopup .popup-body p{color: var(--alert-msg);line-height: 1.3;text-align: center;font-size: 13px;}
 
 
 .btn-pop-close{width: 2.857rem;height: 2.857rem;text-indent: -9999px;position: absolute;right: 0;top: 0;}
