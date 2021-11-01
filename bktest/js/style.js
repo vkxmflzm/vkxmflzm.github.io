@@ -60,19 +60,4 @@ $(function(){
         $h2.removeClass('sticky');
     } 
   });
-
-  //레벨0 팝업
-  function infoPopup(){
-    // 로딩 표시
-    showPopup();
-    // 로딩 숨기기
-    setTimeout(hidePopup());
-  }
-  function showPopup(){
-    $("#infoPopup").show();
-  }
-  function hidePopup(){
-    $("#infoPopup").delay(1000).fadeOut(500,"linear");
-  }
-  infoPopup();
 });

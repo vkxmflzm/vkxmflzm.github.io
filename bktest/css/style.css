@@ -662,9 +662,9 @@ progress::-webkit-progress-value{
 .pop-task > div{width: 80vw;max-width: 300px;min-width: 270px;}
 .pop-guide{width: 100%;}
 
-#infoPopup .popup-wrapper > div{margin: 0 10px;}
-#infoPopup .popup-body{min-width: 250px;padding: 30px 20px;box-sizing: border-box;}
-#infoPopup .popup-body p{color: var(--alert-msg);line-height: 1.3;text-align: center;font-size: 13px;}
+.pop-info .popup-wrapper > div{margin: 0 10px;}
+.pop-info .popup-body{min-width: 250px;padding: 30px 20px 20px;box-sizing: border-box;}
+.pop-info .popup-body p{color: var(--alert-msg);font-size: 13px;line-height: 1.3;text-align: center;word-break: keep-all;}
 
 
 .btn-pop-close{width: 2.857rem;height: 2.857rem;text-indent: -9999px;position: absolute;right: 0;top: 0;}
@@ -700,8 +700,8 @@ transform: translateY(0) rotate(45deg);}
 .error-area p{font-size: 1rem;color:var(--title-color);font-weight: 500;line-height: 2;text-align: center;padding-top: 30%;background: url(../images/icon_error.svg) no-repeat top center;background-size: 30% auto;}
 .error-wrapper.check .error-area p{background: url(../images/icon_check.svg) no-repeat top center;background-size: 30% auto;}
 
-.pop-alert > div{width: 250px;}
-.pop-alert .popup-header{margin: 0;}
+.pop-alert > div,.pop-info > div{width: 250px;}
+.pop-alert .popup-header,.pop-info .popup-header{margin: 0;}
 .pop-alert .popup-body{overflow: hidden;min-height: 80px;display: flex;justify-content: center;align-items: center;}
 
 #mainLoading{display: flex;justify-content: center;width: 100%;height: 100%;position: fixed;left: 0;top: 0;background: #fff;z-index: 9999;background-size: 50% auto;}
