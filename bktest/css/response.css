@@ -12,7 +12,7 @@
     .header-box{top: -100vh;align-items: flex-start;padding-top: 80px;background: rgba(255,255,255,0.9);transition: 1s;height: 100%;position: relative;}
     .header-box.open-nav{top: 0;width: 100%;transition: top 0.5s;height: 100vh;}
     .header-box #logo{display: none;}
-    .mobile-logo{position: absolute;left: 50%;top: 17px;transform: translateX(-50%);}
+    .mobile-logo{display: block;position: absolute;left: 50%;top: 17px;transform: translateX(-50%);}
     .main-nav{display: flex;flex-direction: column;width: 50%;border-right: 1px solid #ebebeb;}
     .main-nav a{font-size: 14px;padding: 10px;text-align: center;}
     .local-area{width: 50%;flex-direction: column-reverse;}
@@ -50,6 +50,10 @@
     .family-link{width: 100%;padding: 10px 0;}
     .footer::after{display: none;}
     .footer-icon span{margin: 0 20px;}
+
+    .section1 .con-box > div{flex-direction: column;align-items: flex-start;padding: 34px 18px 40px;}
+    .section1 .con-box > div p{font-size: 20px;}
+    .section1 .con-box > div p strong{font-size: 32px;}
 }
 
 @media all and (max-width:767px) {
