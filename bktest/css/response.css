@@ -5,6 +5,7 @@
     .local-area nav a{padding: 33px 20px;}
     .linkLang_title{padding: 33px 43px 33px 23px;}
     .linkLang_title::after{right: 17px;}
+    .address-wrap > ul > li {flex-basis: 50%;}
 }
 @media all and (max-width:1023px) {
     .mobile-box{display: none;}
@@ -56,8 +57,36 @@
     .section1 .con-box > div p strong{font-size: 32px;}
 }
 
+@media all and (max-width:980px) {
+  .address-wrap > ul {justify-content: center;}
+  .address-wrap > ul > li {flex-basis: 100%;max-width: 380px;}
+  .address-wrap > ul > li:nth-child(2) address {margin-bottom: 15px;}
+  .getintouch-form form {max-width: 700px;}
+}
+
 @media all and (max-width:767px) {
-    
+  .address-wrap > ul > li .address-title {font-size: 16px;margin-bottom: 10px;}
+  .address-wrap > ul > li address {font-size: 14px;margin-bottom: 10px;}
+  .address-wrap > ul > li .address-tel,
+  .address-wrap > ul > li .address-fax,
+  .address-wrap > ul > li .address-mail {font-size: 14px;}
+  .getintouch-form form {max-width: 560px;}
+  .getintouch-form form .title {font-size: 28px;}
+  .getintouch-form form .inquiry p {font-size: 16px;}
+  .getintouch-form form .inquiry .checkbox-wrap label {font-size: 14px;margin: 0 10px 0 5px;}
+  .getintouch-form form input {font-size: 16px;}
+  .getintouch-form form .input-wrap .textarea-box textarea {font-size: 16px;}
+} 
+
+@media all and (max-width:600px) {
+  .getintouch-form form {max-width: 420px;}
+  .getintouch-form form .input-wrap .input-box {display: flex;flex-direction: column;justify-content: space-between;margin-bottom: 10px;position: relative;}
+  .getintouch-form form .input-wrap .input-box input {width: 100%;}
+  .getintouch-form form .input-wrap .input-box input:nth-child(1) {margin-right: 0;margin-bottom: 10px;}
+  .getintouch-form form .input-wrap .input-box input:nth-child(2) {margin-left: 0;}
+  .PI {display: flex;flex-direction: column;align-items: center;padding: 10px 0;margin: 0;}
+  .PI .PI-text {margin-bottom: 10px;}
+  .send-it {padding-top: 10px;}
 } 
 
 @media all and (max-width:479px) {
