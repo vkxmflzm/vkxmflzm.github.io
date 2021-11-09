@@ -332,7 +332,13 @@ input[type="checkbox"]:checked+label:after {
 .section6 li a img,.news-list li a .img{width: 100%;height: auto;transform: scale(1);transition: all .5s;}
 .section6 li a:hover img,.news-list li a:hover .img{-ms-transform: scale(1.05);-webkit-transform: scale(1.05);transform: scale(1.05);}
 .section6 li a p,.news-list li a p{display: flex;justify-content: center;align-items: center;width: 100%;height: 58px;color: #d7d7d7;font-size: 16px;background: #8a8d89;border-radius: 0 0 15px 15px;position: absolute;bottom: 0;}
+.section6 li:nth-child(1) a p{background:#ccb4bc;color: #323232;}
+.section6 li:nth-child(2) a p{background:#26275f;}
+.section6 li:nth-child(3) a p{background:#4a4c49;}
 .section6 li a:hover p,.news-list li a:hover p{height: 100%;transition: all .5s;background: rgba(138,141,137,0.8);box-sizing: border-box;border-radius: 15px;}
+.section6 li:nth-child(1) a:hover p{background:rgba(204,180,188,0.8);}
+.section6 li:nth-child(2) a:hover p{background:rgba(38,39,95,0.8);}
+.section6 li:nth-child(3) a:hover p{background:rgba(74,76,73,0.8);}
 .section6 li a p span,.news-list li a p span{overflow: hidden;text-overflow: ellipsis;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;line-height: 1.2;padding: 0 20px;}
 .section6 li a:hover p span,.news-list li a:hover p span{display: block;text-align: center;line-height: 1.5;}
 .section6 .con-box > a {display: inline-block;padding: 5px;font-size: 13px;color: #141dad;position: absolute;right: 40px;top: -5px;}
@@ -443,9 +449,9 @@ input[type="checkbox"]:checked+label:after {
   position: relative;
 }
 .hexvision-visual .contents{width: 1200px;height: 422px;background: url(../images/bg_hexvision.png) no-repeat 80px center;position: absolute;left: 50%;top: 80px;transform: translateX(-50%);}
-.news-visual .contents{width: 1200px;height: 422px;position: absolute;left: 50%;top: 80px;transform: translateX(-50%);}
+.news-visual .contents{width: 1180px;height: 422px;position: absolute;left: 50%;top: 80px;transform: translateX(-50%);padding: 0 10px;box-sizing: border-box;}
 [class$="-visual"] .contents h2{font-size: 64px;font-weight: 700;padding-left: 50%;padding-top: 125px;position: relative;}
-[class$="-visual"] .contents p{font-size: 18px;color: #676767;padding-left: calc(50% + 5px);line-height: 1.7;padding-top: 25px;padding-right: 50px;}
+[class$="-visual"] .contents p{font-size: 18px;color: #676767;padding-left: calc(50% + 5px);line-height: 1.7;padding-top: 25px;padding-right: 50px;position: relative;}
 [class$="-visual"] .contents .background{width: 590px;height: 340px;position: absolute;left: -90px;top: 35px;}
 [class$="-visual"] .contents .background .circle{position: absolute;filter: blur(8px);border-radius: 50%;}
 [class$="-visual"] .contents .background .circle:nth-child(1) {
@@ -497,6 +503,13 @@ input[type="checkbox"]:checked+label:after {
 .news-tag{padding: 20px 0 65px;}
 .news-tag ul li{min-width:80px;height: 24px;display:inline-flex;justify-content: center;align-items: center;background: #2a6db6;margin:0 6px}
 .news-tag ul li a{font-size: 14px; color: #fff;line-height: 1;}
+.paging-wrap{display: flex;justify-content: center;align-items: center;margin: 30px 0 40px;}
+.paging-wrap a{display: inline-block;font-size: 16px; color:#767676;padding: 3px 10px 4px;border-radius: 3px;margin:0 2px;}
+.paging-wrap a:hover{color: #141dad;transition: color .15s ease-in-out;}
+.paging-wrap a.on{color: #141dad;font-weight: 500;}
+.paging-wrap [class^="page-"],.paging-wrap [class^="page-"]:hover{display: block;width: 26px;height: 20px;background:url("../images/icon_infiniq.png") no-repeat center -221px;font-size:0;text-indent:-9999px;}
+.paging-wrap .page-next,.paging-wrap .page-next:hover,
+.paging-wrap .page-next.on,.paging-wrap .page-next.on:hover{background-position: center -246px;}
 
 /* .outer {
   width: 200px;
