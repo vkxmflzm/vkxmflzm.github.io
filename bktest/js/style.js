@@ -66,3 +66,15 @@ function hideLangMenu(){
 $('.family-link button').on('click', function(){
     $('.family-link ul').stop().slideToggle(400);
 });
+
+//TOOL video
+function movieDialog(str) {
+  var sample = $("video").get(0);
+  $(str).parent().addClass('on');
+  $(str).parent().siblings().removeClass('on');
+	$("#movie_src").attr("src", $(str).attr("value"));
+  console.log($("#movie_src").attr("src"));
+	$("#a_video").load();
+  // sample.load;
+	// document.getElementById("a_video").play();
+};
