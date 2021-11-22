@@ -1,80 +1,63 @@
 $(function(){
-  
-  $('.menu-btn').click(function() {
-    $('.header-box').toggleClass('open-nav');
-    $(this).toggleClass("is-active");
+  //mainMenu
+	$("#mainMenuOpen").on("click",function(event){
+    event.preventDefault();
+    $("#wrap").addClass("menu-on");
+    $('#mainMenu .dim').show();
   });
 
-  
+  $("#mainMenu .pop-close, #mainMenu .dim").on("click",function(event){
+    event.preventDefault();
+    $("#wrap").removeClass("menu-on");
+    $('#mainMenu .dim').hide();
+  });
 
-  // // 레이어팝업
-  // function layerPopEvent() {
-  // 	$("body").on('click', '.open-pop', function(event){
-  // 		event.preventDefault();
-  // 		$("body").addClass('pop-wrapper');
-  // 		$targetID = $(this).attr('data-target');
-  //     $targetID = $('.'+$targetID);
-  //     $targetID.addClass('layerPop').addClass('open');
-  // 	});
+  // 레이어팝업
+  function layerPopEvent() {
+  	$("body").on('click', '.open-pop', function(event){
+  		event.preventDefault();
+  		$("body").addClass('pop-wrapper');
+  		$targetID = $(this).attr('data-target');
+      $targetID = $('.'+$targetID);
+      $targetID.addClass('layerPop').addClass('open');
+  	});
 
-  // 	$('.pop-close,.dim:not(.none)').on('click', function(event){
-  // 		event.preventDefault();
-  // 		$("body").removeClass('pop-wrapper');
-  //     $('.layerPop').removeClass('open');
-  // 	});
-  // };
-  // layerPopEvent();
+  	$('.pop-close,.dim:not(.none)').on('click', function(event){
+  		event.preventDefault();
+  		$("body").removeClass('pop-wrapper');
+      $('.layerPop').removeClass('open');
+  	});
+  };
+  layerPopEvent();
     
-  
+  // 파일 필드
+  function fileBox(){
+    var fileTarget = $('.filebox .upload-hidden');
+    fileTarget.on('change', function(){ // 값이 변경되면
+      if(window.FileReader){ // modern browser
+        var filename = $(this)[0].files[0].name;
+      } else { // old IE
+        var filename = $(this).val().split('/').pop().split('\\').pop(); // 파일명만 추출
+      }
+    // 추출한 파일명 삽입
+    $(this).siblings('.upload-name').val(filename);
+   });
+  }
+  fileBox();
   
   // 상단 메뉴 고정
-  // var $header = $('.header');
-  // var $h2 = $('.task-container');  
-  // $(window).scroll(function(){
-  //   var $currentSct = $(this).scrollTop();
-  //   var $offset = 164;
+  var $header = $('.header');
+  var $h2 = $('.task-container');  
+  $(window).scroll(function(){
+    var $currentSct = $(this).scrollTop();
+    var $offset = 164;
 
-  //   if($currentSct > $offset){
-  //       $header.addClass('sticky');
-  //       $h2.addClass('sticky');
-  //   }else{
-  //       $header.removeClass('sticky');
-  //       $h2.removeClass('sticky');
-  //   } 
-  // });
-
-  //언어선택 off
-	$('.linkLang_area').mouseleave(hideLangMenu);//마우스 사용
+    if($currentSct > $offset){
+        $header.addClass('sticky');
+        $h2.addClass('sticky');
+    }else{
+        $header.removeClass('sticky');
+        $h2.removeClass('sticky');
+    } 
+  });
 });
-
-
-//언어선택 보이기
-function showLangMenu(){
-	$('body').addClass("displayLangPopup");
-	setTimeout(function(){
-		$('.linkLang_ul').addClass("langPopupOn");
-	},100);
-}
-//언어선택 닫기
-function hideLangMenu(){
-	$('.linkLang_ul').removeClass("langPopupOn");
-	setTimeout(function(){
-		$('body').removeClass("displayLangPopup");
-	},500);
-}
-
-$('.family-link button').on('click', function(){
-    $('.family-link ul').stop().slideToggle(400);
-});
-
-//TOOL video
-function movieDialog(str) {
-  var sample = $("video").get(0);
-  $(str).parent().addClass('on');
-  $(str).parent().siblings().removeClass('on');
-	$("#movie_src").attr("src", $(str).attr("value"));
-  console.log($("#movie_src").attr("src"));
-	$("#a_video").load();
-  // sample.load;
-	// document.getElementById("a_video").play();
-};
