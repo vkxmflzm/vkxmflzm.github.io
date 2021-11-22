@@ -148,6 +148,7 @@
 } 
 
 @media all and (max-width:480px) {
+  .main-section .background{height: 444px;background-size: 300% auto;background-position: center -30px;}
   .main-mycrowd h2,.main-mealy h2{flex-direction: column;align-items: flex-start;}
   .main-mycrowd h2 strong,
   .main-mealy h2 strong{margin-left: 0;margin-top: 10px;}
@@ -156,6 +157,9 @@
   .main-mycrowd .con-box div .btn-more, .main-mealy .con-box div .btn-more{right: 0;top: 20px;}
   .main-visual span {font-size: 28px;}
   .main-mycrowd .con-box div p,.main-mealy .con-box div p{font-size: 13px;padding: 35px 15px;}
+  .news-list li a p{height: 60px;}
+  .news-list li a p span{font-size: 14px;-webkit-line-clamp: 2;line-height: 1.5;}
+  
 }
 
 @media all and (max-width:320px) {

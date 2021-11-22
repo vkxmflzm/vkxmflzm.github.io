@@ -319,7 +319,7 @@ input[type="checkbox"]:checked+label:after {
 .news-list{/*width: 100%;*/max-width: 1180px;height: 100%;margin: 0 auto;padding: 0 20px;position: relative;}
 .news-list h2{font-size: 24px;color: #141dad;font-weight: 700;font-family: Arial;padding-left: 40px;padding-bottom: 47px;}
 .news-list ul{display: flex;justify-content: space-between;flex-wrap: wrap;}
-.news-list li{width: calc((100% - 40px)/3);border-radius: 15px;box-shadow: 0 0 20px rgb(0 0 0 / 42%);}
+.news-list li{width: calc((100% - 40px)/3);border-radius: 15px;box-shadow: 0 0 20px rgb(0 0 0 / 30%);}
 .news-list li{margin-bottom: 20px;position: relative;}
 .news-list li a{display: block;position: relative;}
 .news-list li a .img-box{display: flex;justify-content: center;align-items: center;overflow: hidden;border-radius: 15px;font-size: 0;}
