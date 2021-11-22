@@ -7,7 +7,7 @@ $(function(){
           let Path = document.querySelector(".cls-5");
           let length = Path.getTotalLength();
           
-          console.log(length);
+          //console.log(length);
   
           let text = $('.text');
           let line = $('polyline');
