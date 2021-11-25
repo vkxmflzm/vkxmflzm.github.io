@@ -613,7 +613,7 @@ input[name="tab_item"] {
 /* 선택 된 탭 콘텐츠를 표시 */
 #imageTool:checked ~ #imageTool_content,
 #textTool:checked ~ #textTool_content,
-#vidioTool:checked ~ #vidioTool_content,
+#videoTool:checked ~ #videoTool_content,
 #dTool:checked ~ #dTool_content,
 #soundTool:checked ~ #soundTool_content {
   display: block;
