@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@media all and (max-width:1199px) {
+    #about .content-wrap .content-box {flex-direction: column-reverse;}
+    #about .content-wrap .content-box .left-box {width: 500px;margin-right: 0;margin: 0 auto;}
+    #about .content-wrap .content-box .right-box {width: 500px;height: 362px;margin-left: 0;margin: 0 auto;}
+
+    #about .content-wrap .about-content02 ul {flex-direction: column;align-items: center;}
+    #about .content-wrap .about-content02 li {color: #fff;font-size: 24px;font-weight: 700;line-height: 1.5;display: flex;align-items: center;background: url() no-repeat center;background-size: cover;border-radius: 15px;text-align: left;}
+    #about .content-wrap .about-content02 li:nth-child(1) {background-image: url(../img/about01.png);margin-right: 0;margin: 0 auto;margin-bottom: 20px;}
+    #about .content-wrap .about-content02 li:nth-child(2) {background-image: url(../img/about02.png);margin-left: 0;margin: 0 auto;}
+
+    .validation-content01,
+    .validation-content02,
+    .validation-content03,
+    .validation-content04 {margin: 0 30px;}
+    .validation-content01 .half-area {flex-direction: column-reverse;align-items: center;}
+    .validation-content01 .half-area .left-box .title {padding-top: 30px;}
+    .validation-content02 ul {justify-content: center;}
+    .validation-content02 ul li {width: 200px;height: 200px;margin-bottom: 20px;}
+    .validation-content02 ul li:first-child {margin-left: 10px;}
+    .validation-content02 ul li:last-child {margin-right: 10px;}
+
+    .validation-content03 ul li {margin-bottom: 20px;}
+    .validation-content03 ul li:first-child {margin-left: 10px;}
+    .validation-content03 ul li:last-child {margin-right: 10px;}
+}
+@media all and (max-width:1023px) {
+}
+
+@media all and (max-width:980px) {
+    .validation-content01 .half-area .right-box {width: 60%;}
+}
+
+@media all and (max-width:767px) {
+    .validation-content01 .half-area .left-box {width: 80%;}
+    .validation-content01 .half-area .right-box {width: 70%;}
+} 
+
+@media all and (max-width:600px) {
+    .validation-content01 .half-area .left-box {width: 100%;}
+    .validation-content01 .half-area .right-box {width: 80%;}
+} 
+
+@media all and (max-width:479px) {
+    .validation-content01 .half-area .right-box {width: 100%;}
+}
+
