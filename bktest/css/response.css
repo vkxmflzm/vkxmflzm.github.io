@@ -9,14 +9,13 @@
 
   #validation .content-wrap.business .content-box li {width: calc(50% - 20px);}
 
-  #about .content-wrap .content-box {flex-direction: column-reverse;}
+  #about .about-content02 strong{font-size: 36px;}
+  #about .content-wrap .content-box {flex-direction: column-reverse;margin: 0;}
   #about .content-wrap .content-box .left-box {width: 500px;margin-right: 0;margin: 0 auto;}
   #about .content-wrap .content-box .right-box {width: 500px;height: 362px;margin-left: 0;margin: 0 auto;}
-
-  #about .content-wrap .about-content02 ul {flex-direction: column;align-items: center;}
-  #about .content-wrap .about-content02 li {color: #fff;font-size: 24px;font-weight: 700;line-height: 1.5;display: flex;align-items: center;background: url() no-repeat center;background-size: cover;border-radius: 15px;text-align: left;}
-  #about .content-wrap .about-content02 li:nth-child(1) {margin-right: 0;margin: 0 auto;margin-bottom: 20px;}
-  #about .content-wrap .about-content02 li:nth-child(2) {margin-left: 0;margin: 0 auto;}
+  #about .content-wrap .content-box .left-box > div{padding-right: 0;}
+  #about .btn-wrap .slide-bar{width: 360px;margin-right: 0;}
+  #about .btn-wrap .slide-bar span{width: 90px;}
 }
 @media all and (max-width:1024px) {
   #logo{padding-left: 20px;}
@@ -39,7 +38,7 @@
   .section1 .con-box > div p strong{font-size: 32px;}
 
   .container {padding-top: 51px;}
-  .news-visual .contents{width: 100%;}
+  .news-visual .contents,.pid-visual .contents{width: 100%;box-sizing: border-box;}
   .news-list{padding: 0 20px;}
   .news-list h2{padding-left: 20px;}
 
@@ -118,11 +117,16 @@
   .validation-section li:nth-child(4) span::after{background-position: center -182px;}
   .validation-section li:nth-child(5) span::after{background-position: center -242px;}
   .validation-section li:nth-child(6) span::after{background-position: center -300px;}
+
+  #about .about-content02 strong{font-size: 30px;}
+  .pid-section2 .box-item01 .con-box > div{width: calc(100% - 40px);flex-direction: column-reverse;}
+  .pid-section2 .box-item01 .con-box > div > div:last-child{flex-direction:row;margin-left: 0;margin-bottom: 20px;}
+  .pid-section2 .box-item01 .con-box > div > div{width: 80%;}
 }
 
 @media all and (max-width:980px) {
-  .address-wrap > ul {justify-content: center;}
-  .address-wrap > ul > li {flex-basis: 100%;max-width: 380px;}
+  .address-wrap > ul {margin: 0 60px;}
+  .address-wrap > ul > li {max-width: 380px;}
   .address-wrap > ul > li:nth-child(2) address {margin-bottom: 15px;}
   .getintouch-form form {max-width: 700px;}
   .tab-con {padding-top: 20px;padding-bottom: 60px;}
@@ -134,7 +138,7 @@
   .validation-content02{padding: 0 10px;}
   .validation-content02 ol li{margin: 0 10px 20px;
     width: calc((100% - 120px)/3);}
-
+  
 }
 
 @media all and (max-width:768px) {
@@ -223,6 +227,13 @@
   .box-process span{margin-left: 30px;}
   .mealy-tabs{padding-bottom: 80px;}
   .validation-content01 .half-area .left-box h2.title{font-size: 40px;}
+  .address-wrap{padding: 90px 0;}
+  #about .title-box{padding: 90px 0;}
+  #about .title-text{font-size: 24px;}
+  #about .content-wrap{padding: 90px 0;}
+  #about .about-content02 strong{font-size: 24px;}
+  #about .content-wrap .about-content02 li p{font-size: 20px;}
+  .pid-visual > .background::after{width: 64vw;height: 44vw;background-size: contain;}
 } 
 
 @media all and (max-width:600px) {
@@ -273,6 +284,19 @@
   .validation-content02 .title{font-size: 20px;padding-left: 20px;margin-bottom: 20px;}
   .validation-content02 > div p{font-size: 16px;}
   .validation-content02 > div:nth-of-type(3), .validation-content02 > div:last-of-type{height: auto;margin-bottom: 80px;padding: 20px;}
+  .address-wrap > ul > li {flex-basis: 100%;}
+  #about .content-wrap .title-text{font-size: 26px;}
+  #about .content-wrap .content-box .right-box{width: 90%;height: 70vw;}
+  #about .content-wrap .content-box .right-box ul li{background-size: contain;}
+  #about .content-wrap .content-box .left-box{width: 100%;padding:0 20px;box-sizing: border-box;}
+  #about .btn-wrap .slide-bar{width: calc(100% - 120px);}
+  #about .btn-wrap .slide-bar span{width: calc(100%/4);}
+  #about .content-wrap .worldmap-wrap{height: 40vw;}
+  #about .content-wrap .about-content02 ul {flex-direction: column;align-items: center;}
+  #about .content-wrap .about-content02 li {width: 100%;color: #fff;font-size: 24px;font-weight: 700;line-height: 1.5;display: flex;align-items: center;background: url() no-repeat center;background-size: cover;border-radius: 15px;text-align: left;}
+  #about .content-wrap .about-content02 li:nth-child(1) {margin-right: 0;margin: 0 auto;margin-bottom: 20px;}
+  #about .content-wrap .about-content02 li:nth-child(2) {margin-left: 0;margin: 0 auto;}
+  #about .content-wrap .about-content02 li{height: inherit;padding: 50px 0;}
 } 
 
 @media all and (max-width:480px) {
@@ -288,9 +312,10 @@
   .main-validation .con-box ul li{height: auto;}
   .main-visual span {font-size: 28px;}
   .main-mycrowd .con-box div p,.main-mealy .con-box div p{font-size: 13px;padding: 35px 0;}
+  .family-link ul{top: 57px;}
 
-  .platform-visual, .mealy-visual, .validation-visual, .about-visual, .news-visual, .contactUs-visual{height: 200px;}
-  .platform-visual .contents p, .about-visual .contents p, .news-visual .contents p, .contactUs-visual .contents p{font-size: 24px;}
+  .platform-visual, .mealy-visual, .validation-visual, .about-visual, .news-visual, .contactUs-visual,.pid-visual{height: 200px;}
+  .platform-visual .contents p, .about-visual .contents p, .news-visual .contents p, .contactUs-visual .contents p,.pid-visual .contents p{font-size: 24px;}
   .mealy-visual .contents p, .validation-visual .contents p{font-size: 20px;}
   .mealy-visual .contents p br,.validation-visual .contents p br{
     display:none !important;
@@ -356,6 +381,13 @@
   .validation-content01 .half-area .left-box h2.title{font-size: 32px;}
 
   .validation-content02 ol li p{font-size: 14px;}
+  .contactUs-visual h2{font-size: 24px;}
+  #about .title-text{font-size: 16px;line-height: 1.5;padding:0 20px;box-sizing: border-box;margin: 10px 0;}
+  #about .content-wrap .title-text{font-size: 20px;}
+  #about .content-wrap .content-box .left-box ul li .slide-title{font-size: 32px;}
+  #about .content-wrap .content-box .left-box ul li p{font-size: 14px;}
+
+  
 }
 
 @media all and (max-width:320px) {
@@ -366,4 +398,5 @@
   .platform-section1 h3{font-size: 18px;}
   .platform-section1 h3 em{font-size: 20px;}
   .box-process h5{padding-top: 20px;}
+  
 }
