@@ -234,7 +234,7 @@
   #about .title-box{padding: 90px 0;}
   #about .title-text{font-size: 24px;}
   #about .content-wrap{padding: 90px 0;}
-  #about .about-content02 strong{font-size: 24px;}
+  #about .about-content02 strong{display: inline-block;font-size: 24px;}
   #about .content-wrap .about-content02 li p{font-size: 20px;}
   .pid-visual > .background::after{width: 64vw;height: 44vw;background-size: contain;}
   .pid-section2 h3{flex-direction: column;}
