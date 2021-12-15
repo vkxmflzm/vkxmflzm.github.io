@@ -380,7 +380,7 @@
   .validation-section li:nth-child(6) span::after{background-position: center -200px;}
   .footer > div:nth-child(2){flex-direction: column;}
   .sns-link{width: auto;margin-top: 20px;margin-bottom: 10px;}
-  .family-link{padding: 30px 0 10px;}
+  .family-link{padding: 20px 0;}
   .btn-mycrowd{font-size: 15px;}
   .validation-content01 ul{flex-direction: column;}
   .validation-content01{padding:0 20px;}
