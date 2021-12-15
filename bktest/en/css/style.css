@@ -784,7 +784,7 @@ input[name="tab_item"] {
 #about .title-box {text-align: center;padding: 120px 0;}
 #about .title-box > strong{display: inline-block;width: 90%;max-width: 890px;height: 75px;background: url(../images/txt_about.png) no-repeat center center;background-size: contain;font-size:0;text-indent:-9999px;}
 #about .title {color: #bcbcbc;font-size: 24px;text-transform: uppercase;margin-bottom: 20px;}
-#about .about-content02 strong {font-size: 42px;font-weight: 700;line-height: 1.5;text-transform: uppercase;background: linear-gradient(90deg, rgba(255,97,172,1) 10%, rgba(12,120,255,1) 35%, rgba(20,29,173,1) 65%, rgba(62,201,196,1) 90%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;position: relative;}
+#about .about-content02 strong {display: block;font-size: 42px;font-weight: 700;line-height: 1.5;text-transform: uppercase;background: linear-gradient(90deg, rgba(255,97,172,1) 10%, rgba(12,120,255,1) 35%, rgba(20,29,173,1) 65%, rgba(62,201,196,1) 90%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;position: relative;}
 #about .title-text {color: #323232;font-size: 30px;margin: 20px 0;}
 
 #about .content-wrap {position: relative;padding: 140px 0 120px;text-align: center;background: #fbfbfb;}
