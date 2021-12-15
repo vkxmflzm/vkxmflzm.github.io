@@ -24,7 +24,7 @@
   .main-nav a{margin: 0 10px;font-size: 14px;}
   .local-area nav a{font-size: 14px;}
   .footer .box-wrap:last-child{display: flex;flex-direction: column-reverse;padding-bottom: 20px;}
-  .copyright{margin-top: 15px;}
+  .copyright{margin-top: 20px;}
   .footer > div:nth-child(2){width: 100%;flex-wrap: wrap-reverse;padding: 10px 20px;box-sizing: border-box;margin-bottom: 10px;}
   .family-link{width: 100%;padding: 10px 0;}
   .family-link ul{padding-top: 15px;}
