@@ -1,133 +1,80 @@
-// $('.linkLang_area').mouseleave(hideLangMenu);
-// function showLangMenu(){
-// 	$('body').addClass("displayLangPopup");
-// 	setTimeout(function(){
-// 		$('.linkLang_ul').addClass("langPopupOn");
-// 	},100);
-// }
-// function hideLangMenu(){
-// 	$('.linkLang_ul').removeClass("langPopupOn");
-// 	setTimeout(function(){
-// 		$('body').removeClass("displayLangPopup");
-// 	},500);
-// }
+$(function(){
+  
+  $('.menu-btn').click(function() {
+    $('.header-box').toggleClass('open-nav');
+    $(this).toggleClass("is-active");
+  });
 
-// const langArea = document.getElementById("langArea");
-// const linkLangOpenBtnArea = document.getElementById("linkLangOpenBtnArea");
-// const linkLangArea = document.getElementById("linkLangArea");
+  
 
-// linkLangOpenBtnArea.addEventListener("mouseover", () => {
-// 	document.body.classList.add("displayLangPopup");
-// 	setTimeout(function(){
-// 		linkLangArea.classList.add("langPopupOn");
-// 	},100);
-// });
+  // // 레이어팝업
+  // function layerPopEvent() {
+  // 	$("body").on('click', '.open-pop', function(event){
+  // 		event.preventDefault();
+  // 		$("body").addClass('pop-wrapper');
+  // 		$targetID = $(this).attr('data-target');
+  //     $targetID = $('.'+$targetID);
+  //     $targetID.addClass('layerPop').addClass('open');
+  // 	});
 
-// linkLangOpenBtnArea.addEventListener("mouseout", () => {
-// 	linkLangArea.classList.remove("langPopupOn");
-// 	setTimeout(function(){
-// 		document.body.classList.remove("displayLangPopup");
-// 	},500);
-// });
+  // 	$('.pop-close,.dim:not(.none)').on('click', function(event){
+  // 		event.preventDefault();
+  // 		$("body").removeClass('pop-wrapper');
+  //     $('.layerPop').removeClass('open');
+  // 	});
+  // };
+  // layerPopEvent();
+    
+  
+  
+  // 상단 메뉴 고정
+  // var $header = $('.header');
+  // var $h2 = $('.task-container');  
+  // $(window).scroll(function(){
+  //   var $currentSct = $(this).scrollTop();
+  //   var $offset = 164;
 
-let header = document.querySelector(".header");
+  //   if($currentSct > $offset){
+  //       $header.addClass('sticky');
+  //       $h2.addClass('sticky');
+  //   }else{
+  //       $header.removeClass('sticky');
+  //       $h2.removeClass('sticky');
+  //   } 
+  // });
 
-window.onscroll = function () {
-  let windowTop = window.scrollY;
-  if (windowTop > 0) {
-    header.classList.add("down");
-  } else {
-    header.classList.remove("down");
-  }
-};
-
-// Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('header').outerHeight();
-
-$(window).scroll(function(event){
-    didScroll = true;
+  //언어선택 off
+	$('.linkLang_area').mouseleave(hideLangMenu);//마우스 사용
 });
 
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
 
-function hasScrolled() {
-    var st = $(this).scrollTop();
-    
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-    
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
-        }
-    }
-    
-    lastScrollTop = st;
+//언어선택 보이기
+function showLangMenu(){
+	$('body').addClass("displayLangPopup");
+	setTimeout(function(){
+		$('.linkLang_ul').addClass("langPopupOn");
+	},100);
+}
+//언어선택 닫기
+function hideLangMenu(){
+	$('.linkLang_ul').removeClass("langPopupOn");
+	setTimeout(function(){
+		$('body').removeClass("displayLangPopup");
+	},500);
 }
 
-// //언어선택 보이기
-// function showLangMenu(){
-// 	$('body').addClass("displayLangPopup");
-// 	setTimeout(function(){
-// 		$('.linkLang_ul').addClass("langPopupOn");
-// 	},100);
-// }
-// //언어선택 닫기
-// function hideLangMenu(){
-// 	$('.linkLang_ul').removeClass("langPopupOn");
-// 	setTimeout(function(){
-// 		$('body').removeClass("displayLangPopup");
-// 	},500);
-// }
-
-$('#linkLangOpenBtnArea').click(function() {
-  $('#linkLangArea').toggleClass('langPopupOn');
-  $(this).toggleClass("is-active");
+$('.family-link button').on('click', function(){
+    $('.family-link ul').stop().slideToggle(400);
 });
 
-// $('.sub-down').on('click', function() {
-
-//   function slideDown(target) {
-//     slideUp();
-//     $(target).addClass('on').next().slideDown();
-//   }
-
-//   function slideUp() {
-//     $('.sub-down').removeClass('on').next().slideUp();
-//   }
-
-//   $(this).hasClass('on') ? slideUp() : slideDown(this);
-
-// });
-$('#mainMenuOpen').click(function() {
-  $("#header").toggleClass("drop");
-  $(this).toggleClass("is-active");
-});
-
-$(".sub-down").on("click",function(e){
-  var $this = $(this);
-  if(!$this.hasClass("on")){
-      $this.addClass("on");
-      $this.children(".service-dropbox").stop(true, true).slideDown(300);
-      $this.siblings("li").removeClass("on");
-      $this.siblings("li").find(".service-dropbox").stop(true, true).slideUp(300);
-  }else{
-      $this.removeClass("on");
-      $this.children(".service-dropbox").stop(true, true).slideUp(300);
-  }
-});
+//TOOL video
+function movieDialog(str) {
+  var sample = $("video").get(0);
+  $(str).parent().addClass('on');
+  $(str).parent().siblings().removeClass('on');
+	$("#movie_src").attr("src", $(str).attr("value"));
+  console.log($("#movie_src").attr("src"));
+	$("#a_video").load();
+  // sample.load;
+	// document.getElementById("a_video").play();
+};
